@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root{--cream:#f7f5ef;--ink:#34473d;--sage:#7b8d7e;--gold:#b69252;--white:#fffdf9}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit}
@@ -49,4 +49,105 @@
   .countdownUnit{padding:12px 3px}
   .countdownUnit small{font-size:8px;letter-spacing:.08em}
   .event{padding:22px}
+}
+
+/* Editorial champagne and forest palette */
+:root{--cream:#f8f6f1;--ink:#23372f;--sage:#718176;--gold:#b7955c;--white:#fffefa;--muted:#718078;--champagne:#eee7d9;--forest:#263b32}
+body{background:var(--cream);color:var(--ink);font-family:'Manrope',sans-serif;-webkit-font-smoothing:antialiased}
+h2,.brand,.hero h1,.coupleNames,.eventNumber,.event h3,.dateBand strong,.venueCard h3,.closing .coupleNames{font-family:'Cormorant Garamond',Georgia,serif}
+.nav{position:absolute;top:0;left:0;padding:25px 7%;color:#fff;text-shadow:0 1px 12px #18251e77}
+.brand{font-size:25px;letter-spacing:.05em}.brand span{color:#dfc38e}
+.navLinks{gap:clamp(18px,3vw,42px)}.navLinks a{font-size:10px;letter-spacing:.16em;transition:color .25s}.navLinks a:hover{color:#e3c995}
+.hero{min-height:100svh;background-image:linear-gradient(180deg,#12231d88 0%,#17271d1c 32%,#17251e22 56%,#14231d99 100%),url('/images/anh1.webp');background-position:center 48%;padding:120px 24px 90px}
+.hero::before{content:"";position:absolute;inset:22px;border:1px solid #fff8;pointer-events:none}
+.heroContent{text-shadow:0 2px 26px #13201988}
+.kicker{font-size:10px;letter-spacing:.38em}
+.hero h1{font-weight:400;font-size:clamp(76px,12vw,150px);letter-spacing:-.035em;line-height:.92;margin:25px 0 30px}
+.hero h1 span{font-weight:400;color:#e3c995}
+.heroDate{display:flex;align-items:center;justify-content:center;gap:15px;font-size:11px;letter-spacing:.34em}
+.heroDate i{width:3px;height:3px;border:1px solid #e5d2a9;border-radius:50%}
+.button{margin-top:38px;padding:15px 30px;border:1px solid #ffffffb5;font-size:9px;letter-spacing:.24em}
+.scrollHint{font-size:9px;letter-spacing:.24em}
+.section{padding:125px 24px}
+.inner{max-width:1080px}
+.eyebrow{font-size:9px;letter-spacing:.34em;color:#8c7955}
+h2{font-weight:400;font-size:clamp(48px,6.5vw,76px);letter-spacing:-.025em;line-height:1.02;margin:20px 0 24px}
+.intro{font-size:19px;line-height:1.9;color:#66746b}
+.coupleNames{font-size:clamp(38px,5vw,59px);font-weight:400;color:#9d804c;line-height:1.06;margin:38px 0 0}
+.coupleNames small{font-size:21px;font-weight:400;color:#77867b}
+.dateBand{position:relative;overflow:hidden;padding:78px 20px;text-align:center;color:#f7f2e8;background:var(--forest)}
+.dateBand::before,.dateBand::after{content:"";position:absolute;width:240px;height:240px;border:1px solid #d8c39433;border-radius:50%;top:50%;transform:translateY(-50%)}
+.dateBand::before{left:-130px}.dateBand::after{right:-130px}
+.dateBand .eyebrow{color:#d4c19a}
+.dateBand strong{font-size:clamp(48px,8vw,82px);letter-spacing:.035em;margin:17px 0 10px}
+.dateBand p{font-size:10px;letter-spacing:.17em;color:#ded8cb}
+.countdownSection{padding:86px 20px;background:#eee9df}
+.countdownSection h2{margin:14px 0 32px}
+.countdownUnit{width:min(19vw,124px);min-width:78px;padding:19px 10px;background:#f8f6f1;border:1px solid #ded6c7}
+.countdownUnit span{color:#9d804c;font-size:44px}
+.countdownUnit small{color:#6c796f;font-size:9px;letter-spacing:.18em}
+.events{gap:22px;margin-top:50px}
+.event{position:relative;overflow:hidden;padding:40px;background:#fffefa;border:1px solid #e6dfd2;box-shadow:0 12px 40px #293b2e08}
+.event::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,#9a7b46,#dfd0ae,#9a7b46)}
+.eventNumber{font-size:43px;color:#a48752}
+.event h3{font-size:34px;font-weight:500}
+.event p{font-size:13px;line-height:1.9;color:#647268}
+.time{color:#94784a!important;letter-spacing:.03em}
+.gallerySection{background:#fffefa}
+.gallery{grid-template-columns:1.1fr .9fr;grid-template-rows:repeat(2,minmax(220px,300px));gap:18px;margin-top:48px}
+.gallery img{height:100%;min-height:0;object-fit:cover}
+.gallery img:first-child{grid-row:span 2}
+.gallery img:nth-child(2){height:100%}
+.gallery img:first-child,.gallery img:nth-child(2),.gallery img:nth-child(3){border-radius:2px}
+.families{background:#eee9df}
+.parents{gap:24px;margin:48px auto 0;max-width:820px}
+.parents>div{flex:1;padding:34px 20px;background:#f8f6f1;border:1px solid #dfd7c9}
+.parents h3{font-size:9px;font-weight:600;letter-spacing:.28em;color:#9a804f}
+.parents p{font-size:21px;line-height:1.8}
+.mapSection{background:#f8f6f1}
+.venueCards{gap:22px;max-width:850px;margin-top:44px}
+.venueCard{position:relative;padding:34px;background:#fffefa;border-color:#e5dfd4;box-shadow:0 12px 40px #293b2e08}
+.venueCard h3{font-size:31px;font-weight:500}
+.venueCard p{font-size:13px;line-height:1.8}
+.venueCard a{font-size:9px;letter-spacing:.14em}
+.closing{position:relative;overflow:hidden;padding:120px 20px;background:var(--forest)}
+.closing::before{content:"";position:absolute;inset:18px;border:1px solid #d8c39444;pointer-events:none}
+.closing .eyebrow{color:#d4c19a}.closing h2{color:#f2eadb}.closing p{font-size:19px;line-height:1.9;color:#e0e4dd}
+.closing .coupleNames{color:#dfc995;font-size:64px}
+.footer{padding:26px 15px;background:#1f322a;color:#c8c9bd;font-size:9px;letter-spacing:.21em}
+.floatingHeart{color:#d0b779;opacity:0}
+.venueCard:hover{border-color:#cbb98f}
+.event,.venueCard{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s,border-color .4s}
+@media(max-width:650px){
+ .nav{padding:15px 16px;gap:2px;background:linear-gradient(#17271eb8,transparent)}
+ .brand{font-size:21px}
+ .navLinks{gap:0 15px}
+ .navLinks a{font-size:8px;letter-spacing:.08em}
+ .hero{min-height:92svh;padding:148px 18px 74px;background-position:53% center}
+ .hero::before{inset:12px}
+ .hero h1{font-size:clamp(62px,15vw,92px);margin:23px 0}
+ .heroDate{font-size:9px;letter-spacing:.21em;gap:10px}
+ .kicker{font-size:8px;letter-spacing:.27em}
+ .section{padding:82px 20px}
+ h2{font-size:clamp(44px,12vw,61px)}
+ .intro{font-size:17px}
+ .dateBand{padding:62px 18px}
+ .dateBand::before,.dateBand::after{width:150px;height:150px}
+ .countdownSection{padding:65px 16px}
+ .countdownUnit{width:auto;min-width:0;flex:1;padding:15px 5px}
+ .countdownUnit span{font-size:clamp(31px,9vw,40px)}
+ .countdownUnit small{font-size:8px;letter-spacing:.1em}
+ .events{gap:15px;margin-top:32px}
+ .event{padding:30px 25px}
+ .gallery{grid-template-columns:1fr;grid-template-rows:none;gap:13px}
+ .gallery img:first-child{grid-row:auto}
+ .gallery img,.gallery img:nth-child(2){height:auto;aspect-ratio:4/3}
+ .parents{gap:12px}
+ .parents>div{padding:25px 12px}
+ .parents p{font-size:17px}
+ .venueCards{gap:14px;margin-top:30px}
+ .venueCard{padding:25px}
+ .closing{padding:90px 22px}
+ .closing::before{inset:10px}
+ .closing .coupleNames{font-size:55px}
 }
