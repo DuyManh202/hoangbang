@@ -38,6 +38,11 @@ export default function MusicPlayer() {
     const audio = audioRef.current;
     if (!audio) return;
 
+    if (!audio.paused && !playing) {
+      setPlaying(true);
+      return;
+    }
+
     if (audio.paused) {
       try {
         await audio.play();
