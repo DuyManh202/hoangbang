@@ -1,4 +1,5 @@
 import "./globals.css";
+import ScrollMotion from "../components/ScrollMotion";
 
 export const metadata = {
   title: "Hoàng & Bằng — Ngày chung đôi",
@@ -8,7 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="vi">
-      <body>{children}</body>
+      <body>
+        <ScrollMotion />
+        {children}
+      </body>
     </html>
   );
 }

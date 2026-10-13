@@ -1,7 +1,7 @@
 export default function Closing() {
   return (
     <>
-      <section className="closing" id="loi-moi">
+      <section className="closing" id="loi-moi" data-reveal>
         <div className="eyebrow">With love</div>
         <h2>Rất mong bạn đến chung vui</h2>
         <p>Sự hiện diện của bạn là niềm vui và vinh hạnh<br />cho gia đình chúng mình.</p>

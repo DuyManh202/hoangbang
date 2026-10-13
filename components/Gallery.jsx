@@ -1,7 +1,7 @@
 export default function Gallery() {
   return (
     <section className="section gallerySection">
-      <div className="inner">
+      <div className="inner" data-reveal>
         <div className="eyebrow">Our memories</div>
         <h2>Một chút thương mến</h2>
         <div className="gallery">
