@@ -187,10 +187,10 @@ h2{font-weight:400;font-size:clamp(48px,6.5vw,76px);letter-spacing:-.025em;line-
 .calendarWeekday{display:grid;place-items:center;height:30px;color:#8b958c;font-size:9px;font-weight:600;letter-spacing:.08em}
 .calendarDay{position:relative;display:grid;place-items:center;min-height:42px;color:#35483e;font-size:12px;font-variant-numeric:tabular-nums}
 .calendarDayBlank{visibility:hidden}
-.calendarDayEvent{width:38px;height:38px;min-height:38px;justify-self:center;border-radius:50%;color:#fffefa;font-weight:700}
-.calendarDayEvent20{background:#b7955c}
-.calendarDayEvent21{background:#263b32}
-.calendarDayEvent i{position:absolute;right:-2px;top:-1px;color:#b7955c;font-size:9px;font-style:normal;text-shadow:0 1px 3px #fff}
+.calendarDayEvent{width:46px;height:42px;min-height:42px;justify-self:center;isolation:isolate;color:#fffefa;font-weight:700;animation:none}
+.calendarDayEvent::before{content:"♥";position:absolute;inset:0;z-index:0;display:grid;place-items:center;color:#b7955c;font:40px/1 Georgia,serif;animation:calendar-heart-glow 2.8s ease-in-out infinite}
+.calendarDayEvent21::before{color:#263b32}
+.calendarDayNumber{position:relative;z-index:1;transform:translateY(1px);font-size:12px;font-weight:700;color:#fffefa}
 .calendarLunar{margin:19px 0 0;color:#89938a;font:italic 12px 'Cormorant Garamond',Georgia,serif}
 .calendarEvents{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;text-align:left}
 .calendarEvent{display:flex;align-items:center;gap:14px;padding:14px;background:#fffefa;border:1px solid #e8e3d8}
@@ -204,16 +204,15 @@ h2{font-weight:400;font-size:clamp(48px,6.5vw,76px);letter-spacing:-.025em;line-
 .calendarEventHeart{color:#b7955c;font:22px/1 Georgia,serif}
 .weddingCalendarWrap.is-visible .weddingCalendarCard{animation:calendar-card-enter .75s cubic-bezier(.2,.7,.2,1) both}
 .weddingCalendarWrap.is-visible .calendarEvent{animation:calendar-event-enter .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--calendar-index)*130ms)}
-.calendarDayEvent{animation:calendar-date-glow 2.8s ease-in-out infinite}
 .calendarEvent{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
 .calendarEvent:hover{transform:translateY(-4px);border-color:#cdb98e;box-shadow:0 12px 28px #263b3212}
 .calendarEventHeart{transition:transform .25s ease}
 .calendarEvent:hover .calendarEventHeart{transform:scale(1.18) rotate(-8deg)}
 @keyframes calendar-card-enter{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes calendar-event-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-@keyframes calendar-date-glow{0%,100%{box-shadow:0 0 0 0 #b7955c00}50%{box-shadow:0 0 0 5px #b7955c24}}
-@media(max-width:650px){.weddingCalendarSection{padding:70px 18px}.weddingCalendarCard{margin:24px auto 16px;padding:22px 18px 18px}.calendarGrid{gap:2px}.calendarDay{min-height:38px}.calendarDayEvent{width:34px;height:34px;min-height:34px}.calendarEvents{grid-template-columns:1fr;gap:9px}.calendarEvent{padding:12px}.calendarEventInfo strong{font-size:16px}}
-@media(prefers-reduced-motion:reduce){.calendarDayEvent,.weddingCalendarWrap.is-visible .weddingCalendarCard,.weddingCalendarWrap.is-visible .calendarEvent{animation:none}.calendarEvent,.calendarEventHeart{transition:none}}
+@keyframes calendar-heart-glow{0%,100%{filter:drop-shadow(0 0 0 #b7955c00)}50%{filter:drop-shadow(0 2px 5px #b7955c70)}}
+@media(max-width:650px){.weddingCalendarSection{padding:70px 18px}.weddingCalendarCard{margin:24px auto 16px;padding:22px 18px 18px}.calendarGrid{gap:2px}.calendarDay{min-height:38px}.calendarDayEvent{width:42px;height:40px;min-height:40px}.calendarDayEvent::before{font-size:37px}.calendarEvents{grid-template-columns:1fr;gap:9px}.calendarEvent{padding:12px}.calendarEventInfo strong{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.calendarDayEvent::before,.weddingCalendarWrap.is-visible .weddingCalendarCard,.weddingCalendarWrap.is-visible .calendarEvent{animation:none}.calendarEvent,.calendarEventHeart{transition:none}}
 @media(max-width:480px){
  .nav{padding-top:max(13px,env(safe-area-inset-top));}
  .hero{min-height:90svh;padding:132px 18px 70px;background-position:center 46%}

@@ -34,8 +34,7 @@ export default function WeddingCalendar({ events }) {
                 aria-label={highlightedDays.has(day) ? `Ngày ${day}, có lịch cưới` : `Ngày ${day}`}
                 key={day}
               >
-                {day}
-                {highlightedDays.has(day) && <i aria-hidden="true">♥</i>}
+                {highlightedDays.has(day) ? <span className="calendarDayNumber">{day}</span> : day}
               </span>
             ))}
           </div>
