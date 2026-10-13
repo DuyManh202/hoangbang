@@ -16,3 +16,18 @@ export const families = {
   groom: { title: "NHÀ TRAI", father: "Nguyễn Văn Hải", mother: "Hoàng Thị Loan" },
   bride: { title: "NHÀ GÁI", father: "Nguyễn Chiến Thắng", mother: "Đặng Thị Nghệ" },
 };
+
+export const venues = [
+  {
+    id: "groom-house",
+    title: "Tư gia nhà trai",
+    address: `${wedding.address} (${wedding.alternateAddress})`,
+    mapUrl: "https://maps.app.goo.gl/Uym95aPL6zsu2J1Y6",
+  },
+  {
+    id: "bride-house",
+    title: "Tư gia nhà gái",
+    address: "",
+    mapUrl: "https://maps.app.goo.gl/HGRynaZh5PML1QVw6",
+  },
+];
