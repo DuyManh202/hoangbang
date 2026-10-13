@@ -7,7 +7,7 @@ export default function MusicPlayer() {
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
-    const audio = new Audio("/music/only.mp3");
+    const audio = new Audio("/music/cuoi-thoi-2.mp3");
     audio.loop = true;
     audio.volume = 0.45;
     audioRef.current = audio;
@@ -61,8 +61,8 @@ export default function MusicPlayer() {
       className="musicPlayer"
       type="button"
       onClick={togglePlayback}
-      aria-label={playing ? "Tắt nhạc" : "Bật nhạc"}
-      title={playing ? "Tắt nhạc" : "Bật nhạc"}
+      aria-label={playing ? "Tắt Cưới Thôi 2" : "Bật Cưới Thôi 2"}
+      title={playing ? "Tắt Cưới Thôi 2" : "Bật Cưới Thôi 2"}
     >
       <span aria-hidden="true">{playing ? "♫" : "♪"}</span>
     </button>

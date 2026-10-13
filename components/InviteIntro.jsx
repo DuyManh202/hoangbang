@@ -7,12 +7,14 @@ export default function InviteIntro() {
   const [closed, setClosed] = useState(false);
 
   useEffect(() => {
+    if (closed) return;
+
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = previousOverflow;
     };
-  }, []);
+  }, [closed]);
 
   const openInvitation = () => {
     if (opening) return;
