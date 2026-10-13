@@ -8,6 +8,7 @@ import InviteIntro from "../components/InviteIntro";
 import MusicPlayer from "../components/MusicPlayer";
 import SiteHeader from "../components/SiteHeader";
 import Story from "../components/Story";
+import WeddingCalendar from "../components/WeddingCalendar";
 import VenueMaps from "../components/VenueMaps";
 import WeddingDetails from "../components/WeddingDetails";
 import WeddingCountdown from "../components/WeddingCountdown";
@@ -21,6 +22,7 @@ export default function Home() {
       <SiteHeader />
       <Hero />
       <Story />
+      <WeddingCalendar events={events} />
       <WeddingCountdown />
       <WeddingDetails events={events} wedding={wedding} />
       <VenueMaps venues={venues} />

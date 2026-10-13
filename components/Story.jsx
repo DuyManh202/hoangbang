@@ -11,11 +11,6 @@ export default function Story() {
           <div className="coupleNames">{wedding.groom}<small>&amp;</small>{wedding.bride}</div>
         </div>
       </section>
-      <section className="dateBand">
-        <div className="eyebrow">Save the date</div>
-        <strong>{wedding.date}</strong>
-        <p>THỨ BA · {wedding.lunarDate.toUpperCase()}</p>
-      </section>
     </>
   );
 }
