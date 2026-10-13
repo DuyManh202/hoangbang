@@ -4,6 +4,7 @@ import Families from "../components/Families";
 import FloatingHearts from "../components/FloatingHearts";
 import Gallery from "../components/Gallery";
 import Hero from "../components/Hero";
+import InviteIntro from "../components/InviteIntro";
 import MusicPlayer from "../components/MusicPlayer";
 import SiteHeader from "../components/SiteHeader";
 import Story from "../components/Story";
@@ -14,6 +15,7 @@ import WeddingCountdown from "../components/WeddingCountdown";
 export default function Home() {
   return (
     <main>
+      <InviteIntro />
       <MusicPlayer />
       <FloatingHearts />
       <SiteHeader />
