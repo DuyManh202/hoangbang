@@ -2,7 +2,7 @@ import "./globals.css";
 import ScrollMotion from "../components/ScrollMotion";
 
 export const metadata = {
-  metadataBase: new URL("https://hoangbangweding.click"),
+  metadataBase: new URL("https://www.hoangbangweding.click"),
   title: "Hoàng & Bằng — Ngày chung đôi",
   description: "Thiệp mời cưới của Hoàng và Bằng, ngày 20–21 tháng 10 năm 2026.",
   icons: {
@@ -13,12 +13,12 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "vi_VN",
-    url: "https://hoangbangweding.click/",
+    url: "https://www.hoangbangweding.click/",
     title: "Hoàng & Bằng — Ngày chung đôi",
     description: "Thiệp mời cưới của Hoàng và Bằng, ngày 20–21 tháng 10 năm 2026.",
     images: [
       {
-        url: "/images/anh5.webp",
+        url: "/images/share-preview.jpg",
         width: 1200,
         height: 630,
         alt: "Ảnh cưới Hoàng và Bằng",
@@ -29,7 +29,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Hoàng & Bằng — Ngày chung đôi",
     description: "Thiệp mời cưới của Hoàng và Bằng, ngày 20–21 tháng 10 năm 2026.",
-    images: ["/images/anh5.webp"],
+    images: ["/images/share-preview.jpg"],
   },
 };
 
