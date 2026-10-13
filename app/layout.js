@@ -5,6 +5,11 @@ export const metadata = {
   metadataBase: new URL("https://hoangbangweding.click"),
   title: "Hoàng & Bằng — Ngày chung đôi",
   description: "Thiệp mời cưới của Hoàng và Bằng, ngày 20–21 tháng 10 năm 2026.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "vi_VN",
