@@ -44,7 +44,7 @@ export default function WeddingCalendar({ events }) {
 
         <div className="calendarEvents">
           {events.map((event, index) => (
-            <article className="calendarEvent" key={event.day}>
+            <article className="calendarEvent" key={event.day} style={{ "--calendar-index": index }}>
               <span className={`calendarEventDate calendarEventDate${index + 1}`}>
                 <small>{index === 0 ? "THỨ BA" : "THỨ TƯ"}</small>
                 <strong>{event.day.split(".")[0]}</strong>
