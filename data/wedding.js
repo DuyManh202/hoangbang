@@ -8,8 +8,8 @@ export const wedding = {
 };
 
 export const events = [
-  { day: "20.10", title: "Tiệc thân mật", date: "Thứ Ba, ngày 20 tháng 10 năm 2026", lunar: "" },
-  { day: "21.10", title: "Lễ thành hôn", date: "Thứ Tư, ngày 21 tháng 10 năm 2026", lunar: "Tức ngày 12 tháng 09 năm Bính Ngọ" },
+  { day: "20.10", title: "Tiệc thân mật", time: "15 giờ 00 (3 giờ chiều)", date: "Thứ Ba, ngày 20 tháng 10 năm 2026", lunar: "" },
+  { day: "21.10", title: "Lễ thành hôn", time: "08 giờ 30", date: "Thứ Tư, ngày 21 tháng 10 năm 2026", lunar: "Tức ngày 12 tháng 09 năm Bính Ngọ" },
 ];
 
 export const families = {
