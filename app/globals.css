@@ -19,3 +19,34 @@
 .countdownSection{padding:78px 20px;text-align:center;background:var(--white)}.countdownSection h2{margin-bottom:30px}.countdown{display:flex;justify-content:center;gap:14px}.countdownUnit{width:min(20vw,112px);min-width:68px;padding:16px 8px;background:#e9ede5;border:1px solid #e1e7de}.countdownUnit span{display:block;color:var(--gold);font:400 clamp(28px,5vw,42px)/1.1 'Playfair Display',serif;font-variant-numeric:tabular-nums}.countdownUnit small{display:block;margin-top:7px;color:var(--muted);font-size:10px;letter-spacing:.12em;text-transform:uppercase}.mapSection{background:#f1f2ec}.mapIntro{margin:0;color:#68766d;font:italic 16px 'Playfair Display',serif}.venueCards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:780px;margin:34px auto 0;text-align:left}.venueCard{padding:28px;background:var(--white);border:1px solid #e6e4db;transition:transform .35s ease,box-shadow .35s ease}.venueCard:hover{transform:translateY(-5px);box-shadow:0 16px 38px #34473d12}.mapPin{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#f0e7d6;color:var(--gold)}.venueCard h3{margin:16px 0 8px;font:400 24px 'Playfair Display',serif}.venueCard p{min-height:48px;color:#68766d;font-size:13px;line-height:1.65}.venueCard a{display:inline-block;margin-top:8px;color:var(--ink);font-size:11px;font-weight:600;letter-spacing:.08em;text-decoration:none;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:5px}.venueCard a span{color:var(--gold)}
 @media(max-width:650px){.countdownSection{padding:62px 16px}.countdown{gap:8px}.countdownUnit{min-width:0;flex:1;padding:14px 5px}.venueCards{grid-template-columns:1fr}.venueCard p{min-height:0}}
 @media(prefers-reduced-motion:reduce){.venueCard{transition:none}}
+
+/* Small-screen layout and comfortable touch targets. */
+@media(max-width:650px){
+  .nav{padding:14px 16px;flex-direction:column;gap:10px;background:linear-gradient(#26342ccc,transparent)}
+  .brand{font-size:18px}
+  .navLinks{width:100%;justify-content:center;flex-wrap:wrap;gap:4px clamp(10px,3vw,18px)}
+  .navLinks a{display:inline-flex;min-height:36px;align-items:center;font-size:10px;letter-spacing:.08em;white-space:nowrap}
+  .hero{padding:132px 16px 72px;background-position:54% center}
+  .hero h1{font-size:clamp(42px,12vw,64px)}
+  .kicker{font-size:10px;letter-spacing:.22em}
+  .heroDate{font-size:12px;letter-spacing:.14em}
+  .button{min-height:44px;padding:14px 20px}
+  .scrollHint{bottom:14px;font-size:9px}
+  .section{padding:68px 18px}
+  .countdownSection{padding:58px 16px}
+  .venueCard a{min-height:44px;display:inline-flex;align-items:center}
+  .parents{gap:12px 28px}
+  .parents>div{max-width:100%}
+  .gallery{grid-template-columns:1fr;gap:12px}
+  .gallery img,.gallery img:nth-child(2){height:auto;aspect-ratio:4/3;object-fit:cover}
+}
+@media(max-width:360px){
+  .nav{padding-inline:12px}
+  .navLinks{column-gap:10px}
+  .navLinks a{font-size:9px;letter-spacing:.06em}
+  .hero{padding-inline:12px}
+  .countdown{gap:6px}
+  .countdownUnit{padding:12px 3px}
+  .countdownUnit small{font-size:8px;letter-spacing:.08em}
+  .event{padding:22px}
+}
